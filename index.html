@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Tienda</h1>
+
+    <div id="productos">
+        <div class="producto">
+            <h2>Adidas Campus 00s</h2>
+            <img src="./img/adidas-Campus-00s-Crystal-White-Core-Black-Product.avif" alt="CAMPUS 00S">
+            <p>Precio: $50</p>
+            <button class="agregar-carrito" data-id="1" data-nombre="Adidas Campus 00s" data-precio="50">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h2>Asics Gel Kayano</h2>
+            <img src="./img/Asics-Gel-Kayano-14-White-Midnight-W-Product.avif" alt="Asics Gel Kayano">
+            <p>Precio: $20</p>
+            <button class="agregar-carrito" data-id="2" data-nombre="Asics Gel Kayano" data-precio="20">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h2>Air Jordan 4 Purple</h2>
+            <img src="./img/Air-Jordan-4-Retro-Canyon-Purple-W-Product.avif" alt="Air Jordan 4 Purple">
+            <p>Precio: $90</p>
+            <button class="agregar-carrito" data-id="3" data-nombre="Air Jordan 4 Purple" data-precio="90">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h2>Nike AirMax 270</h2>
+            <img src="./img/Nike-Air-Max-270-White-Black-W-Product.avif" alt="Nike AirMax 270">
+            <p>Precio: $110</p>
+            <button class="agregar-carrito" data-id="4" data-nombre="Nike AirMax 270" data-precio="110">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h2>Nike Dunk Low Photon</h2>
+            <img src="./img/Nike-Dunk-Low-Photon-Dust-W-Product.avif" alt="Nike Dunk Low Photon">
+            <p>Precio: $45</p>
+            <button class="agregar-carrito" data-id="5" data-nombre="Nike Dunk Low Photon" data-precio="45">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h2>Nike Zoom Vomero</h2>
+            <img src="./img/Nike-Zoom-Vomero-5-Pink-Foam-Hot-Punch-Womens-Product.avif" alt="Nike Zoom Vomero">
+            <p>Precio: $20</p>
+            <button class="agregar-carrito" data-id="6" data-nombre="Nike Zoom Vomero" data-precio="20">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h2>Carrito de Compras</h2>
+    <table id="carrito">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody> 
+    </table>
+
+    <p>Total: $<span id="total">0</span></p>
+
+    <script src="./js/scrip.js"></script>
+</body>
+</html>
